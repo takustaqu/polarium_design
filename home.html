@@ -10,13 +10,10 @@
 <body>
 	
 <div id="display">
-	<!--<div id="title"></div>
+	<div id="title-home">
+		<img src="images/01_title/logo_anim_blank.png" alt="" id="main-title">
+	</div>
 	
-	<ul id="main-nav">
-		<li><a href="#">開始</a></li>
-		<li><a href="#">アルバム</a></li>
-	</ul>
-	-->
 	<!--<div id="pairing">
 		<img src="images/02_match/match_title_blank.png" alt="" id="pairing-title">
 		<img src="images/02_match/match_txt.png" alt="" id="pairing-note">
@@ -24,8 +21,12 @@
 	</div>-->
 	
 	<div id="polarium-lists">
+		
+		<img src="images/06_album/album_title.png" class="album-title">
+		<img src="images/06_album/album_txt.png" class="album-notes">
+		
 		<ul class="album-view">
-			<li><div class="thumbnail"><img src="images/06_album/samples/test001.jpg" alt="" ></div><span class="date">0000/00/00</span></li>
+			<li><div class="thumbnail"><img src="images/06_album/btn_polaru.png" id="btn-polaru" alt="" ></div><span class="date"></span></li>
 			<li><div class="thumbnail"><img src="images/06_album/samples/test001.jpg" alt="" ></div><span class="date">0000/00/00</span></li>
 			<li><div class="thumbnail"><img src="images/06_album/samples/test001.jpg" alt="" ></div><span class="date">0000/00/00</span></li>
 			<li><div class="thumbnail"><img src="images/06_album/samples/test001.jpg" alt="" ></div><span class="date">0000/00/00</span></li>
@@ -40,5 +41,14 @@
 
 </div>
 
+
+<script>
+	setTimeout(function(){
+		$("#title-home").animate({"top":"-100%","opacity":"0"},500,function(){
+			$(this).remove();
+		});
+		$("#polarium-lists").fadeIn();
+	},2000)
+</script>
 </body>
 </html>

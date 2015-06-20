@@ -91,3 +91,20 @@ body #display {
   width: 100%;
   height: 100%;
 }
+
+@-webkit-keyframes threeFrameAnimation {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -300% 0;
+  }
+}
+@keyframes threeFrameAnimation {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -300% 0;
+  }
+}

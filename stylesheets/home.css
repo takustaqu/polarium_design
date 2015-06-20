@@ -21,7 +21,8 @@
   text-decoration: none;
 }
 
-/* line 26, ../sass/home.scss */
+/* Pairing Screen */
+/* line 28, ../sass/home.scss */
 #pairing {
   text-align: center;
 }
@@ -66,4 +67,43 @@
   background-size: cover;
   -webkit-animation: threeFrameAnimation 1.5s steps(3, end) infinite alternate;
   animation: threeFrameAnimation 1.5s steps(3, end) infinite alternate;
+}
+
+/* Album view */
+/* line 68, ../sass/home.scss */
+#polarium-lists {
+  overflow: scroll;
+}
+
+/* line 71, ../sass/home.scss */
+.album-view {
+  text-align: center;
+}
+/* line 74, ../sass/home.scss */
+.album-view, .album-view > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 79, ../sass/home.scss */
+.album-view > li {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+/* line 85, ../sass/home.scss */
+.album-view .thumbnail {
+  width: 130px;
+  height: 130px;
+  border-radius: 140px;
+  padding: 5px;
+  background-color: #ccc;
+}
+/* line 91, ../sass/home.scss */
+.album-view .thumbnail > img {
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
+  background-color: red;
 }

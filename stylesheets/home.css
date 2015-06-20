@@ -20,3 +20,28 @@
   width: 80px;
   text-decoration: none;
 }
+
+@-webkit-keyframes handshake {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -300% 0;
+  }
+}
+@keyframes handshake {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -300% 0;
+  }
+}
+/* line 36, ../sass/home.scss */
+#pairing-animation {
+  width: 280px;
+  background-image: url(../images/02_match/match_anim.png);
+  background-size: cover;
+  -webkit-animation: handshake 1.5s steps(3, end) infinite alternate;
+  animation: handshake 1.5s steps(3, end) infinite alternate;
+}

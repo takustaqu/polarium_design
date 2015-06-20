@@ -1,0 +1,13 @@
+@import url(common.css);
+/* line 4, ../sass/draw.scss */
+ul#color-palette, ul#color-palette > li {
+  list-style-type: none;
+}
+/* line 7, ../sass/draw.scss */
+ul#color-palette > li {
+  display: block;
+  border-radius: 32px;
+  background-color: #FFF;
+  width: 24px;
+  height: 24px;
+}

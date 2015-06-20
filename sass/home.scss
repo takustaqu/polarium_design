@@ -1,1 +1,23 @@
 @import url(common.css);
+
+
+#main-nav {
+	
+	position: absolute;
+	top:65%;
+	width:100%;
+	text-align:center;
+	
+	> li {
+		display:inline-block;
+		
+		a {
+			display:block;
+			border:1px solid #FFF;
+			padding:8px;
+			border-radius:32px;color:#FFF;
+			width:80px;
+			text-decoration:none;
+		}
+	}
+}

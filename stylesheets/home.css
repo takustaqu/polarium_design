@@ -1,1 +1,22 @@
 @import url(common.css);
+/* line 4, ../sass/home.scss */
+#main-nav {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+}
+/* line 11, ../sass/home.scss */
+#main-nav > li {
+  display: inline-block;
+}
+/* line 14, ../sass/home.scss */
+#main-nav > li a {
+  display: block;
+  border: 1px solid #FFF;
+  padding: 8px;
+  border-radius: 32px;
+  color: #FFF;
+  width: 80px;
+  text-decoration: none;
+}

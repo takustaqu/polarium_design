@@ -22,11 +22,35 @@
 	}
 }
 
+#title-home{
+	
+	text-align:center;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	
+	#main-title {
+		width:70%;
+		display:inline-block;
+		background-image:url(../images/01_title/logo_anim.png);	
+		background-size:cover;
+		-webkit-animation: threeFrameAnimation 0.4s steps(3, end) infinite;
+	    animation: threeFrameAnimation 0.4s steps(3, end) infinite;
+		margin-top:60%;
+	}
+}
+
+
+
 
 /* Pairing Screen */
 
 #pairing {
 	text-align:center;
+	position: absolute;
+	display: none;
+	top:0;
 }
 
 #pairing-title {
@@ -55,6 +79,13 @@
 /* Album view */
 
 #polarium-lists {
+	position: absolute;
+	display: none;
+	top:0;
+	
+	width:100%;
+	height:100%;
+	
 	overflow:scroll;
 	text-align:center;
 	
@@ -85,7 +116,7 @@
 	
 	
 	.thumbnail {
-		
+
 		width:130px;
 		height:130px;
 		border-radius:140px;
@@ -102,6 +133,6 @@
 			background-color:red;
 		}
 	}
-	
-	
 }
+
+

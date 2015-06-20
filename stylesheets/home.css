@@ -21,7 +21,12 @@
   text-decoration: none;
 }
 
-@-webkit-keyframes handshake {
+/* line 26, ../sass/home.scss */
+#pairing {
+  text-align: center;
+}
+
+@-webkit-keyframes threeFrameAnimation {
   0% {
     background-position: 0% 0;
   }
@@ -29,7 +34,7 @@
     background-position: -300% 0;
   }
 }
-@keyframes handshake {
+@keyframes threeFrameAnimation {
   0% {
     background-position: 0% 0;
   }
@@ -37,11 +42,28 @@
     background-position: -300% 0;
   }
 }
-/* line 36, ../sass/home.scss */
+/* line 43, ../sass/home.scss */
+#pairing-title {
+  width: 70%;
+  display: inline-block;
+  background-image: url(../images/02_match/match_title_anim.png);
+  background-size: cover;
+  -webkit-animation: threeFrameAnimation 0.2s steps(3, end) infinite alternate;
+  animation: threeFrameAnimation 0.2s steps(3, end) infinite alternate;
+  margin-top: 35%;
+}
+
+/* line 53, ../sass/home.scss */
+#pairing-note {
+  width: 80%;
+  display: inline-block;
+}
+
+/* line 58, ../sass/home.scss */
 #pairing-animation {
   width: 280px;
   background-image: url(../images/02_match/match_anim.png);
   background-size: cover;
-  -webkit-animation: handshake 1.5s steps(3, end) infinite alternate;
-  animation: handshake 1.5s steps(3, end) infinite alternate;
+  -webkit-animation: threeFrameAnimation 1.5s steps(3, end) infinite alternate;
+  animation: threeFrameAnimation 1.5s steps(3, end) infinite alternate;
 }

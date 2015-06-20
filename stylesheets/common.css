@@ -74,7 +74,9 @@ body {
 }
 /* line 12, ../sass/common.scss */
 body #display {
+  position: relative;
   width: 360px;
   height: 640px;
   background-color: #000;
+  overflow: hidden;
 }

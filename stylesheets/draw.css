@@ -1,13 +1,102 @@
 @import url(common.css);
-/* line 4, ../sass/draw.scss */
+/* line 3, ../sass/draw.scss */
+ul#color-palette {
+  width: 32px;
+  right: 0;
+  position: absolute;
+  padding: 16px;
+}
+/* line 10, ../sass/draw.scss */
 ul#color-palette, ul#color-palette > li {
   list-style-type: none;
 }
-/* line 7, ../sass/draw.scss */
+/* line 13, ../sass/draw.scss */
 ul#color-palette > li {
   display: block;
   border-radius: 32px;
   background-color: #FFF;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  position: relative;
+}
+/* line 24, ../sass/draw.scss */
+ul#color-palette > li.color-pink {
+  background-color: #F14A90;
+}
+/* line 25, ../sass/draw.scss */
+ul#color-palette > li.color-yellow {
+  background-color: #FEE333;
+}
+/* line 26, ../sass/draw.scss */
+ul#color-palette > li.color-blue {
+  background-color: #157ECA;
+}
+/* line 27, ../sass/draw.scss */
+ul#color-palette > li.color-green {
+  background-color: #53C65A;
+}
+/* line 28, ../sass/draw.scss */
+ul#color-palette > li.color-white {
+  background-color: #FFFFFF;
+}
+/* line 33, ../sass/draw.scss */
+ul#color-palette > li {
+  right: -40px;
+}
+/* line 35, ../sass/draw.scss */
+ul#color-palette > li:nth-child(0) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.0s;
+}
+/* line 36, ../sass/draw.scss */
+ul#color-palette > li:nth-child(1) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.025s;
+}
+/* line 37, ../sass/draw.scss */
+ul#color-palette > li:nth-child(2) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.05s;
+}
+/* line 38, ../sass/draw.scss */
+ul#color-palette > li:nth-child(3) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.075s;
+}
+/* line 39, ../sass/draw.scss */
+ul#color-palette > li:nth-child(4) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.1s;
+}
+/* line 40, ../sass/draw.scss */
+ul#color-palette > li:nth-child(5) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.125s;
+}
+/* line 41, ../sass/draw.scss */
+ul#color-palette > li:nth-child(6) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.15s;
+}
+/* line 42, ../sass/draw.scss */
+ul#color-palette > li:nth-child(7) {
+  transition: transform 0.1s ease-out,right 0.2s ease-out 0.175s;
+}
+/* line 44, ../sass/draw.scss */
+ul#color-palette.opened > li {
+  right: 0;
+}
+/* line 49, ../sass/draw.scss */
+ul#color-palette > li.color {
+  transform: scale(0.5);
+}
+/* line 54, ../sass/draw.scss */
+ul#color-palette > li.mirror-toggle {
+  height: 64px;
+  position: relative;
+  top: 8px;
+  right: -48px;
+}
+/* line 61, ../sass/draw.scss */
+ul#color-palette.opened > li.mirror-toggle {
+  right: 0;
+}
+/* line 65, ../sass/draw.scss */
+ul#color-palette > li.color.selected, ul#color-palette > li.color:hover {
+  transform: scale(1);
 }

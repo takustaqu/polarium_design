@@ -13,16 +13,30 @@
 <div id="display">
 	<div id="touch-area">
 		<ul id="color-palette">
-			<li class="color-pink"></li>
-			<li class="color-yellow"></li>
-			<li class="color-blue"></li>
-			<li class="color-green"></li>
-			<li class="color-white"></li>
-			<li class="color-rainbow"></li>
+			<li class="color color-pink selected"></li>
+			<li class="color color-yellow"></li>
+			<li class="color color-blue"></li>
+			<li class="color color-green"></li>
+			<li class="color color-white"></li>
+			<li class="color color-rainbow"></li>
 			<li class="mirror-toggle"></li>
 		</ul>
 	</div>
 </div>
+
+
+<script>
+	$("#display").on({"click":function(){
+		$("#color-palette").toggleClass("opened");
+	}});
+	
+	$("#color-palette .color").on({"click":function(e){
+		e.preventDefault();
+		$("#color-palette .color").removeClass("selected");
+		$(this).addClass("selected");
+		return false;
+	}})
+</script>
 
 
 

@@ -29,17 +29,6 @@
 	text-align:center;
 }
 
-@-webkit-keyframes threeFrameAnimation {
-    0% { background-position: 0% 0; }
-    100% { background-position: -300% 0; }
-}
-
-@keyframes threeFrameAnimation {
-    0% { background-position: 0% 0; }
-    100% { background-position: -300% 0; }
-}
-
-
 #pairing-title {
 	width:70%;
 	display:inline-block;

@@ -73,26 +73,47 @@
 /* line 68, ../sass/home.scss */
 #polarium-lists {
   overflow: scroll;
+  text-align: center;
+}
+/* line 72, ../sass/home.scss */
+#polarium-lists .album-title, #polarium-lists .album-notes {
+  display: inline-block;
+}
+/* line 73, ../sass/home.scss */
+#polarium-lists .album-title {
+  margin-top: 30px;
+  width: 70%;
+}
+/* line 74, ../sass/home.scss */
+#polarium-lists .album-notes {
+  margin-bottom: 10px;
+  width: 80%;
 }
 
-/* line 71, ../sass/home.scss */
+/* line 77, ../sass/home.scss */
 .album-view {
   text-align: center;
 }
-/* line 74, ../sass/home.scss */
+/* line 80, ../sass/home.scss */
 .album-view, .album-view > li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 79, ../sass/home.scss */
+/* line 85, ../sass/home.scss */
 .album-view > li {
   display: inline-block;
   width: 150px;
   text-align: center;
   margin-bottom: 16px;
 }
-/* line 85, ../sass/home.scss */
+/* line 90, ../sass/home.scss */
+.album-view > li .date {
+  display: inline-block;
+  min-width: 10px;
+  height: 1em;
+}
+/* line 98, ../sass/home.scss */
 .album-view .thumbnail {
   width: 130px;
   height: 130px;
@@ -102,7 +123,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 95, ../sass/home.scss */
+/* line 109, ../sass/home.scss */
 .album-view .thumbnail > img {
   width: 100%;
   height: 100%;

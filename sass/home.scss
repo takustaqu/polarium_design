@@ -67,7 +67,13 @@
 
 #polarium-lists {
 	overflow:scroll;
+	text-align:center;
+	
+	.album-title , .album-notes { display:inline-block; } 
+	.album-title { margin-top:30px;width:70%; }
+	.album-notes { margin-bottom:10px;width:80%; }
 }
+
 .album-view {
 	text-align:center;
 	
@@ -81,8 +87,16 @@
 		width:150px;
 		text-align:center;
 		margin-bottom:16px;
+		.date {
+			display:inline-block;
+			min-width:10px;
+			height:1em;
+		}
 	}
+	
+	
 	.thumbnail {
+		
 		width:130px;
 		height:130px;
 		border-radius:140px;
@@ -99,4 +113,6 @@
 			background-color:red;
 		}
 	}
+	
+	
 }

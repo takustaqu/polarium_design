@@ -77,7 +77,7 @@ ul#color-palette > li:nth-child(6) {
 ul#color-palette > li:nth-child(7) {
   transition: transform 0.1s ease-out,right 0.2s ease-out 0.175s;
 }
-/* line 44, ../sass/draw.scss */
+/* line 45, ../sass/draw.scss */
 ul#color-palette.opened > li {
   right: 0;
 }
@@ -91,12 +91,32 @@ ul#color-palette > li.mirror-toggle {
   position: relative;
   top: 8px;
   right: -48px;
+  background-color: #ccc;
 }
 /* line 61, ../sass/draw.scss */
+ul#color-palette > li.mirror-toggle .toggle-handle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  background-color: #FFF;
+  left: 2px;
+  top: 2px;
+  transition: top 0.2s ease-in-out 0s;
+}
+/* line 71, ../sass/draw.scss */
+ul#color-palette > li.mirror-toggle.activated {
+  background-color: #4ED951;
+}
+/* line 73, ../sass/draw.scss */
+ul#color-palette > li.mirror-toggle.activated .toggle-handle {
+  top: 32px;
+}
+/* line 80, ../sass/draw.scss */
 ul#color-palette.opened > li.mirror-toggle {
   right: 0;
 }
-/* line 65, ../sass/draw.scss */
+/* line 85, ../sass/draw.scss */
 ul#color-palette > li.color.selected, ul#color-palette > li.color:hover {
   transform: scale(1);
 }

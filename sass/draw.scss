@@ -41,8 +41,8 @@ ul#color-palette {
 		&:nth-child(6){transition:transform 0.1s ease-out,right 0.2s ease-out 0.15s;}
 		&:nth-child(7){transition:transform 0.1s ease-out,right 0.2s ease-out 0.175s;}
 	}
+	
 	&.opened > li {
-		
 		right:0;
 	}
 	
@@ -56,10 +56,30 @@ ul#color-palette {
 		position:relative;
 		top:8px;
 		right:-48px;
+		background-color:#ccc;
+
+		.toggle-handle {
+			position: absolute;
+			width:28px;
+			height:28px;
+			border-radius:28px;
+			background-color:#FFF;
+			left:2px;top:2px;
+			transition: top 0.2s ease-in-out 0s;
+		}
+		
+		&.activated {
+			background-color:#4ED951;
+			.toggle-handle {
+				top:32px;
+			}
+		}
+		
 	}
 	
 	&.opened >li.mirror-toggle {
 		right:0;
+		
 	}
 	
 	>li.color.selected ,>li.color:hover {

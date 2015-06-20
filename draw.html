@@ -11,6 +11,7 @@
 	
 
 <div id="display">
+	<canvas id="c" style="border:1px solid #000;position:absolute;left:0;top:0;" width="360" height="640"></canvas>
 	<div id="touch-area">
 		<ul id="color-palette">
 			<li class="color color-pink selected"></li>
@@ -19,12 +20,14 @@
 			<li class="color color-green"></li>
 			<li class="color color-white"></li>
 			<li class="color color-rainbow"></li>
-			<li class="mirror-toggle"></li>
+			<li class="mirror-toggle activated"><div class="toggle-handle"></div></li>
 		</ul>
 	</div>
 </div>
 
 
+
+<a href="processing.html">描画終了</a>
 <script>
 	$("#display").on({"click":function(){
 		$("#color-palette").toggleClass("opened");
@@ -36,6 +39,55 @@
 		$(this).addClass("selected");
 		return false;
 	}})
+	
+	$(".mirror-toggle").eq(0).on({"click":function(){
+		$(this).toggleClass("activated");
+		return false;
+	}});
+</script>
+
+<script>
+	(function(){
+		var el = document.getElementById('c');
+	var ctx = el.getContext('2d');
+	
+	ctx.lineWidth = 4;
+	ctx.lineJoin = ctx.lineCap = 'round';
+	ctx.shadowBlur = 10;
+	ctx.shadowColor = 'rgb(255, 255, 255)';
+	ctx.strokeStyle = "rgb(255, 255, 255)";
+	var isDrawing, points = [ ];
+	
+	el.onmousedown = function(e) {
+	  isDrawing = true;
+	  points.push({ x: e.clientX, y: e.clientY });
+	  var color = $("#color-palette .color.selected").css("background-color");
+	
+	　ctx.shadowColor = color;
+	　ctx.strokeStyle = color;
+	
+	};
+	
+	el.onmousemove = function(e) {
+	  if (!isDrawing) return;
+	  
+	  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+	  points.push({ x: e.clientX, y: e.clientY });
+	
+	  ctx.beginPath();
+	  ctx.moveTo(points[0].x, points[0].y);
+	  for (var i = 1; i < points.length; i++) {
+	    ctx.lineTo(points[i].x, points[i].y);
+	  }
+	  
+	  ctx.stroke();
+	};
+	
+	el.onmouseup = function() {
+	  isDrawing = false;
+	  points.length = 0;
+	};
+	})();
 </script>
 
 

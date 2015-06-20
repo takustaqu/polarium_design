@@ -141,3 +141,11 @@
   border-radius: 130px;
   background-color: red;
 }
+
+/* line 139, ../sass/home.scss */
+img.image-fit {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}

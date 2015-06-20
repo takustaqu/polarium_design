@@ -120,3 +120,11 @@ ul#color-palette.opened > li.mirror-toggle {
 ul#color-palette > li.color.selected, ul#color-palette > li.color:hover {
   transform: scale(1);
 }
+
+/* line 97, ../sass/draw.scss */
+#display {
+  background-image: url(../images/03_draw/sample_vid.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -108,3 +108,10 @@ body #display {
     background-position: -300% 0;
   }
 }
+/* line 42, ../sass/common.scss */
+img.image-fit {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}

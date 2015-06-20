@@ -122,9 +122,26 @@ ul#color-palette > li.color.selected, ul#color-palette > li.color:hover {
 }
 
 /* line 97, ../sass/draw.scss */
-#display {
+#draw {
+  width: 100%;
+  height: 100%;
   background-image: url(../images/03_draw/sample_vid.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* line 107, ../sass/draw.scss */
+#progress {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/* line 113, ../sass/draw.scss */
+#progress > img {
+  position: absolute;
+  top: 35%;
 }

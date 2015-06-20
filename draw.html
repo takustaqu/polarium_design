@@ -11,18 +11,24 @@
 	
 
 <div id="display">
-	<img src="images/03_draw/draw_title_combo.png" alt="" class="image-fit">
-	<canvas id="c" style="border:1px solid #000;position:absolute;left:0;top:0;" width="360" height="640"></canvas>
-	<div id="touch-area">
-		<ul id="color-palette">
-			<li class="color color-pink selected"></li>
-			<li class="color color-yellow"></li>
-			<li class="color color-blue"></li>
-			<li class="color color-green"></li>
-			<li class="color color-white"></li>
-			<li class="color color-rainbow"></li>
-			<li class="mirror-toggle activated"><div class="toggle-handle"></div></li>
-		</ul>
+	
+	<div id="progress">
+		<img src="images/04_send/send_title_combo.png" class="image-fit" alt="">
+	</div>
+	<div id="draw">
+		<img src="images/03_draw/draw_title_combo.png" alt="" class="image-fit">
+		<canvas id="c" style="border:1px solid #000;position:absolute;left:0;top:0;" width="360" height="640"></canvas>
+		<div id="touch-area">
+			<ul id="color-palette">
+				<li class="color color-pink selected"></li>
+				<li class="color color-yellow"></li>
+				<li class="color color-blue"></li>
+				<li class="color color-green"></li>
+				<li class="color color-white"></li>
+				<li class="color color-rainbow"></li>
+				<li class="mirror-toggle activated"><div class="toggle-handle"></div></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
@@ -45,6 +51,14 @@
 		$(this).toggleClass("activated");
 		return false;
 	}});
+	
+	setTimeout(function(){
+		$("#draw").fadeOut();
+		$("#progress").fadeIn();
+		setTimeout(function(){
+			window.location.href = "play.html";
+		},1000)
+	},10000)
 </script>
 
 <script>

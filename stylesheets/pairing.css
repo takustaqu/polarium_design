@@ -1,0 +1,64 @@
+@import url(common.css);
+/* line 4, ../sass/pairing.scss */
+#main-nav {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+}
+/* line 11, ../sass/pairing.scss */
+#main-nav > li {
+  display: inline-block;
+}
+/* line 14, ../sass/pairing.scss */
+#main-nav > li a {
+  display: block;
+  border: 1px solid #FFF;
+  padding: 8px;
+  border-radius: 32px;
+  color: #FFF;
+  width: 80px;
+  text-decoration: none;
+}
+
+/* Pairing Screen */
+/* line 28, ../sass/pairing.scss */
+#pairing {
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+/* line 34, ../sass/pairing.scss */
+#pairing-title {
+  width: 70%;
+  display: inline-block;
+  background-image: url(../images/02_match/match_title_anim.png);
+  background-size: cover;
+  -webkit-animation: threeFrameAnimation 0.2s steps(3, end) infinite alternate;
+  animation: threeFrameAnimation 0.2s steps(3, end) infinite alternate;
+  margin-top: 35%;
+}
+
+/* line 44, ../sass/pairing.scss */
+#pairing-note {
+  width: 80%;
+  display: inline-block;
+}
+
+/* line 49, ../sass/pairing.scss */
+#pairing-animation {
+  width: 280px;
+  background-image: url(../images/02_match/match_anim.png);
+  background-size: cover;
+  -webkit-animation: threeFrameAnimation 1.5s steps(3, end) infinite alternate;
+  animation: threeFrameAnimation 1.5s steps(3, end) infinite alternate;
+}
+
+/* line 57, ../sass/pairing.scss */
+img.image-fit {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
